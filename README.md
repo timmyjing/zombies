@@ -5,7 +5,7 @@
 San Francisco is under a zombie epidemic and AppAcademy is under attack!
 
 Zombies is a survival game where a player controls a hero character on screen in order to defend a chokepoint. The player will be able to shoot projectiles in order to destroy zombies and prevent them from entering the office and disrupting the students who are currently working on their full stack project. The game will be from a topdown 2D
-point of view. The hero has a finite amount of health and must avoid getting hit by zombies. The game is lost when the hero is out of health or if enough zombies have entered the office.
+point of view. The hero has a finite amount of health and must avoid getting hit by zombies. The game is lost when the hero is out of health or if enough zombies have entered the office. Might consider renaming the game to Bug Attack! to be more friendly and programmer tongue in cheek (Hero is armed with debugger).
 
 ## MVP
 - Randomly generated zombies that slowly converge onto the home base
@@ -15,6 +15,7 @@ point of view. The hero has a finite amount of health and must avoid getting hit
 - Score is based on the amount of time survived
 
 ## WireFrames
+![alt-text](https://raw.githubusercontent.com/timmyjing/zombies/master/wiki/zombies.jpg "Zombies wireframe")
 
 ## Architecture and Technologies
 - Game logic will be built on Vanilla JavaScript
