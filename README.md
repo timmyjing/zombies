@@ -25,7 +25,9 @@ point of view. The hero has a finite amount of health and must avoid getting hit
 Scripts in this project:
 
 <code>board.js</code>: This script will handle the DOM manipulation such as the Canvas rendering and event listeners.
+
 <code>zombies.js</code>: This script will contain all the logic for all the moving objects in the game.
+
 <code>audio.js</code>: This script will contain all the audio events and logic associated with the game.
 
 
