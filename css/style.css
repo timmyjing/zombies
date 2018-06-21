@@ -1,0 +1,26 @@
+#canvas {
+  background: url('http://oi48.tinypic.com/33fdgle.jpg');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: -40px 20px;
+}
+
+.nav-bar li {
+  width: 600px;
+  height: 30px;
+  /* border: 2px solid red; */
+  list-style: none;
+}
+
+button {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+  background: url('http://sfwallpaper.com/images/zombies-backgrounds-23.jpg');
+  color: red;
+}
