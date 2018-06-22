@@ -69,7 +69,7 @@ Weekend:
 
 One challenge I had was properly implementing a pause feature since relying on setInterval for the spawning of resources and zombies made it buggy when the game paused. The intervals would continue even though the game was paused and then suddenly a horde of zombies would spawn. By storing the intervals to the game object keys, I can clear them with clearInterval() and restart them whenever the game is unpaused.
 
-<code>
+```
   Game.prototype.start = function() {
   var game = this;
   this.spawnPlayer();
@@ -77,10 +77,10 @@ One challenge I had was properly implementing a pause feature since relying on s
   this.resourceTimer = setInterval(this.spawnResource.bind(this), 8000);
   this.timer = setInterval(function() {game.time -= 1000}, 1000);
 }
-</code>
+```
 
 Also, the use of a prototype MovingObject also helped keep the code DRY and made it much easier to handle collisions as all the objects in the game inherited from MovingObject, thus having access to a handle collision method.
-<code>
+```
  Game.prototype.checkCollisions = function() {
   var allObjects = this.allObjects();
   for (var i = 0; i < allObjects.length; i++) {
@@ -97,7 +97,7 @@ Also, the use of a prototype MovingObject also helped keep the code DRY and made
   }
   return null;
 }
- </code>
+```
 
 ## Bonuses
 - Narrowed field of view with fog of war in order to increase difficulty - DONE
