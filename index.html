@@ -4,24 +4,34 @@
     <title>Zombies!</title>
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
     <script src="./lib/keymaster.js"></script>
+    <audio id="background" autoplay loop src="./sounds/background.mp3"></audio>
     <img style="display: none;" id="sprite" src="./images/zombie.png"></img>
     <img style="display: none;" id="train" src="./images/train.png"></img>
   </head>
 
   <body>
     <main class="main-container">
-      <div style="display: none; font-family: 'retro';">hi</div>
-      <canvas width="800" height="600" id='canvas'>
-      </canvas>
       <ul class="sidebar">
         <li>Zombies</li>
-        <li>A 2D Retro Inspired Shooter</li>
-        <li><img src="./images/wasd.png"></img> to Move </li>
-        <li><img src="./images/shift.png"></img> to Sprint</li>
-        <li><img src="./images/spacebar.png"> to shoot</li>
-        <li>Survive for 60 seconds!</li>
+        <li>A 2D Retro Inspired Survival Shooter</li>
+        <li><img src="./images/wasd.png"></img> Move </li>
+        <li><img src="./images/shift.png"></img> Sprint</li>
+        <li><img src="./images/spacebar.png"> Shoot</li>
+        <li>Press M to Mute</li>
+        <li>It's easy, survive</li>
+        <li>Life</li>
+        <li><span style="color: green;">Ammo</span></li>
       </ul>
+      <canvas width="800" height="600" id='canvas'>
+      </canvas>
     </main>
     <script src="./lib/bundle.js"></script>
   </body>
+  <footer>
+    <ul class="footer">
+      <li>Made by Timmy Jing</li>
+      <li><a href="https://www.linkedin.com/in/timmy-jing-47457362/">LinkedIn</a></li>
+      <li><a href="https://github.com/timmyjing">GitHub</a></li>
+    </ul>
+  </footer>
 </html>
