@@ -1,5 +1,7 @@
 # Zombies - A game built using Vanilla Javascript
 
+[(not)Live Site](https://timmyjing.github.io/zombies/)
+
 ## Background and Overview
 
 San Francisco is under a zombie epidemic and AppAcademy is under attack!
