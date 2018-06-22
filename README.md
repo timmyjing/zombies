@@ -13,6 +13,7 @@ point of view. The hero has a finite amount of health and must avoid getting hit
 - Players can shoot projectiles in order to defend against the zombie attack
 - The game is lost when enough zombies have passed into the safe zone or when the player gets enough strikes from a zombie
 - Score is based on the amount of time survived
+- UPDATE: Gameplay was overhauled in order to remove the home base due to the lack of an appropriate sprite. Some of the available freeware sprites would require creating path logic. The game is now survival based where zombies randomly spawn and the player must survive for 60 seconds until evacuation. The player's vision is limited. Ammo and lives are also finite with powerups that could be picked up. High score is scrapped for a timer instead due to the survival nature.
 
 ## WireFrames
 ![alt-text](https://raw.githubusercontent.com/timmyjing/zombies/master/wiki/zombies.jpg "Zombies wireframe")
@@ -25,11 +26,11 @@ point of view. The hero has a finite amount of health and must avoid getting hit
 
 Scripts in this project:
 
-<code>board.js</code>: This script will handle the DOM manipulation such as the Canvas rendering and event listeners.
+<code>game.js</code>: This script will handle the DOM manipulation such as the Canvas rendering and event listeners.
 
-<code>zombies.js</code>: This script will contain all the logic for all the moving objects in the game.
+<code>zombies.js</code>: This script will contain all the logic for all the moving objects in the game. Made with webpack.
 
-<code>audio.js</code>: This script will contain all the audio events and logic associated with the game.
+<code>audio.js</code>: This script will contain all the audio events and logic associated with the game. - DID NOT NEED.
 
 
 ## Implementation
@@ -38,31 +39,38 @@ Weekend:
 - Researched how to make a 2D game using sprites
 
 ### Day 1:
-- Setup Node modules and configure Webpack. Get started with the entry file.
-- Work on the game classes such as moving objects.
-- Collision detection and zombie AI will be implemented.
-- Create the game grid.
-- Create the logic for zombies to randomly spawn on the screen.
+- Setup Node modules and configure Webpack. Get started with the entry file. - DONE
+- Work on the game classes such as moving objects. - DONE
+- Collision detection and zombie AI will be implemented. - DONE
+- Create the game grid. - DONE
+- Create the logic for zombies to randomly spawn on the screen. - DONE
 
 ### Day 2:
-- Learn how to implement sprites into Canvas in order to render animations.
-- Gather sprites and create a sprite sheet for the game characters and animations.
-- Create keyboard controls for the player.
+- Learn how to implement sprites into Canvas in order to render animations. - DONE
+- Gather sprites and create a sprite sheet for the game characters and animations. - DONE
+- Create keyboard controls for the player. - DONE
 
 ### Day 3:
-- Add sound effects using Web Audio API.
-- Make sure the game plays smoothly
+- Add sound effects using Web Audio API. - DONE, did not need Web Audio API, used HTML audio tags
+- Make sure the game plays smoothly - DONE
 
 ### Day 4:
-- Bug checks, game testing, and game balance.
-- Work on the HTML presentation for the project.
-- Create game to start, reset and pause the game.
+- Bug checks, game testing, and game balance. - DONE. Made the game reasonably difficult and removed any lingering console logs and etc.
+- Work on the HTML presentation for the project. - DONE
+- Create game to start, reset and pause the game. - DONE
 
 ## Bonuses
-- Narrowed field of view with fog of war in order to increase difficulty
-- Special bosses such as big bugs
-- Limited resources such as ammunition in order to make the game more survival based
+- Narrowed field of view with fog of war in order to increase difficulty - DONE
+- Special bosses such as big bugs 
+- Limited resources such as ammunition in order to make the game more survival based - DONE
 - Barricades that can be built and repaired
 - Special weapons
 - Random events
-- Quests
+- Quests - Nah haha
+
+## Future Changes
+- New sprites for the powerups, didn't get a chance to implement due to a lack of time.
+- Couldn't get Canvas to render the custom font for the welcome screen
+
+## Comments
+- Project was written with ES5 syntax in order to better understand JavaScript as a language.
