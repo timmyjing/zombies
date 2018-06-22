@@ -2,23 +2,31 @@
   /* background: url('http://oi48.tinypic.com/33fdgle.jpg'); */
   background: url('../images/back.png');
   background-size: cover;
-  background-position: 120px -40px;
+  background-position: 120px -55px;
 }
 
 
 .sidebar {
   border: 1px solid #fff;
   margin: 2px 10px;
+  width: 300px;
 }
 
 .sidebar li {
-  padding: 40px;
+  padding: 5px;
   font-size: 24px;
   list-style: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.sidebar img {
+  width: 50%;
+  height: auto;
 }
 
 button {
-  padding: 10px;
+  padding: 0px;
   border: 1px solid black;
   border-radius: 2px;
 }
@@ -26,13 +34,13 @@ button {
 .main-container {
   border: 1px solid #fff;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   margin: 50px auto;
   display: inline-flex;
 }
 
 body {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
   background: url('http://sfwallpaper.com/images/zombies-backgrounds-23.jpg');
   color: red;
